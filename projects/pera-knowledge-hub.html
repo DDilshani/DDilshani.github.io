@@ -19,7 +19,7 @@
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
-			width: 75%;
+			width: 300px;
 			margin: 50px auto;
 		}
 
@@ -43,6 +43,25 @@
 
 		#wrapper>header p {
 			text-transform: none;
+		}
+
+		@media screen and (max-width: 480px) {
+
+			body,
+			input,
+			select,
+			textarea {
+				font-size: 12pt;
+			}
+
+			.features article {
+				display: block;
+				margin-left: auto !important;
+				margin-right: auto !important;
+				width: 150px;
+				height: 210px;
+				margin: 20px;
+			}
 		}
 	</style>
 </head>
