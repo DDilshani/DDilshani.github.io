@@ -1,354 +1,131 @@
-<!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-	<title>Projects</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-	<style>
-		@media screen and (max-width: 480px) {
-			.features {
-				display: block;
-			}
-
-			.features article {
-				width: 100%;
-				margin: 0 0 2em 0 !important;
-			}
-		}
-	</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Dilshani Karunarathna</title>
+  <meta name="description" content="Selected software, robotics, machine-learning and hardware projects by Dilshani Karunarathna." />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+  <link rel="stylesheet" href="assets/css/portfolio.css" />
 </head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Dilshani Karunarathna home">
+        <span class="brand-mark">DK</span>
+        <span class="brand-name">Dilshani Karunarathna</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="projects.html" class="nav-current">Projects</a><a href="reserches.html">Research</a><a href="achievements.html">Achievements</a><a href="certifications.html">Certifications</a><a class="nav-cta" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="archive-hero section">
+      <div class="container">
+        <a class="back-link reveal" href="index.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to portfolio</a>
+        <div class="archive-heading reveal">
+          <p class="eyebrow">Projects</p>
+          <h1>Software, robotics and <span>technical explorations.</span></h1>
+          <p>A collection of projects where I explored ideas across software engineering, mixed reality, robotics, computer vision, machine learning, databases and computer architecture.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section archive-content">
+      <div class="container">
+        <div class="archive-grid archive-grid-projects">
+          <a class="archive-card project-archive-card reveal" href="projects/mr-based-simulation-platform.html">
+            <div class="archive-card-media"><img src="images/projects/mr-based-simulation-platform/mr-based-simulation-platform.jpeg" alt="Mixed Reality-based Simulation Platform for Swarm Robotics" /></div>
+            <div class="archive-card-body">
+              <p class="case-kicker">Mixed reality · Robotics · Research</p>
+              <h2>Mixed Reality-based Simulation Platform for Swarm Robotics</h2>
+              <p>A mixed-reality experimentation platform where physical and virtual robots coexist in the same environment. The system was designed to reduce the cost and complexity of swarm-robotics research while preserving realistic interaction between agents.</p>
+              <div class="tech-row"><span>Mixed Reality</span><span>Swarm Robotics</span><span>Simulation</span><span>Real-time Systems</span></div>
+              <span class="text-link">Explore project <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            </div>
+          </a>          <a class="archive-card project-archive-card reveal" href="projects/zerotrash.html">
+            <div class="archive-card-media"><img src="images/projects/zerotrash/zerotrash.jpg" alt="Zero Trash" /></div>
+            <div class="archive-card-body">
+              <p class="case-kicker">Sustainability · Web platform</p>
+              <h2>Zero Trash</h2>
+              <p>A smart waste-management platform connecting households with garbage collectors. The system supports pickup requests, collector assignment and notifications, with the broader goal of improving collection efficiency and encouraging more sustainable waste practices.</p>
+              <div class="tech-row"><span>Web Application</span><span>Notifications</span><span>Workflow Design</span><span>Sustainability</span></div>
+              <span class="text-link">Explore project <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            </div>
+          </a>          <a class="archive-card project-archive-card reveal" href="projects/unified-project.html">
+            <div class="archive-card-media"><img src="images/projects/unified/unified.jpg" alt="Remote Multi-Robot Control &amp; Supervision" /></div>
+            <div class="archive-card-body">
+              <p class="case-kicker">Robotics · Human–robot interaction</p>
+              <h2>Remote Multi-Robot Control &amp; Supervision</h2>
+              <p>A centralized graphical interface for monitoring, coordinating and controlling multiple robotic units remotely. The project explored real-time command delivery, robot-status monitoring and scalable supervision through a single operator interface.</p>
+              <div class="tech-row"><span>Robotics</span><span>GUI</span><span>Remote Control</span><span>Real-time Communication</span></div>
+              <span class="text-link">Explore project <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            </div>
+          </a>          <a class="archive-card project-archive-card reveal" href="projects/pera-knowledge-hub.html">
+            <div class="archive-card-media"><img src="images/projects/perahub/perahub.jpg" alt="Pera Knowledge Hub" /></div>
+            <div class="archive-card-body">
+              <p class="case-kicker">Information retrieval · Academic platform</p>
+              <h2>Pera Knowledge Hub</h2>
+              <p>A digital repository for preserving and discovering academic publications from the University of Peradeniya. Uploaded PDFs are stored centrally, their text is extracted and indexed, and users can search across document content rather than relying only on titles or metadata.</p>
+              <div class="tech-row"><span>Full-text Search</span><span>PDF Processing</span><span>CMS</span><span>Database</span></div>
+              <span class="text-link">Explore project <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            </div>
+          </a>          <a class="archive-card project-archive-card reveal" href="projects/trafficSignNet.html">
+            <div class="archive-card-media"><img src="images/projects/trafficSignNet/trafficSignNet.png" alt="Traffic Sign Net" /></div>
+            <div class="archive-card-body">
+              <p class="case-kicker">Deep learning · Computer vision</p>
+              <h2>Traffic Sign Net</h2>
+              <p>A deep-learning system for detecting, localizing and classifying Sri Lankan traffic signs from road images. The work included dataset preparation, image preprocessing and training a convolutional neural network for traffic-sign recognition.</p>
+              <div class="tech-row"><span>CNN</span><span>Computer Vision</span><span>Deep Learning</span><span>Image Processing</span></div>
+              <span class="text-link">Explore project <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            </div>
+          </a>          <a class="archive-card project-archive-card reveal" href="projects/real-time-vehicle-identification-system.html">
+            <div class="archive-card-media"><img src="images/projects/real-time-vehicle-identification-system/real-time-vehicle-identification-system.png" alt="Real-Time Vehicle Identification System" /></div>
+            <div class="archive-card-body">
+              <p class="case-kicker">Computer vision · Database systems</p>
+              <h2>Real-Time Vehicle Identification System</h2>
+              <p>An automated vehicle-identification platform designed for toll-booth workflows. It combines number-plate recognition with a centralized database to retrieve vehicle, licence, insurance and emission-test information without manual verification.</p>
+              <div class="tech-row"><span>Image Processing</span><span>Database</span><span>Recognition</span><span>Intelligent Transport</span></div>
+              <span class="text-link">Explore project <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            </div>
+          </a>          <a class="archive-card project-archive-card reveal" href="projects/sap-1.html">
+            <div class="archive-card-media"><img src="images/projects/sap1/sap1.png" alt="SAP-1 Computer" /></div>
+            <div class="archive-card-body">
+              <p class="case-kicker">Computer architecture · Hardware</p>
+              <h2>SAP-1 Computer</h2>
+              <p>An 8-bit educational computer built from discrete digital-logic components. I worked on the processor modules, custom PCB design and fabrication, system integration, hardware debugging and machine-language execution.</p>
+              <div class="tech-row"><span>Computer Architecture</span><span>Digital Logic</span><span>PCB Design</span><span>Hardware</span></div>
+              <span class="text-link">Explore project <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            </div>
+          </a>
+        </div>
 
-<body class="is-preload">
-
-	<!-- Page Wrapper -->
-	<div id="page-wrapper">
-
-		<header id="header" class="alt">
-			<div class="navbar">
-				<a href="#projects">Projects</a>
-				<div class="dropdown">
-					<button class="dropbtn">
-						<i class="fa fa-bars" style="font-size:24px"></i>
-					</button>
-					<div class="dropdown-content">
-						<a href="index.html">Home</a>
-						<a href="experience.html">Experience</a>
-						<a href="reserches.html">Research Works</a>
-						<a href="projects.html">Projects</a>
-						<a href="achievements.html">Achievements</a>
-						<a href="certifications.html">Certifications</a>
-					</div>
-				</div>
-			</div>
-		</header>
-
-		<!-- Wrapper -->
-		<section id="wrapper">
-			<header id="projects">
-				<div class="inner">
-					<div class="back"><a href="index.html" class="special">Back</a></div>
-					<h2>Projects</h2>
-					<section class="features">
-						<article>
-							<a href="projects/mr-based-simulation-platform.html" class="image"><img
-									src="images/projects/mr-based-simulation-platform/mr-based-simulation-platform.jpeg"
-									alt="" style="height:250px" /></a>
-							<h3 class="major">Mixed reality-based simulation platform for swarm robotics</h3>
-							<p>Software & Hardware Project</p>
-							<a href="projects/mr-based-simulation-platform.html" class="special">See more</a>
-						</article>
-						<article>
-							<a href="projects/zerotrash.html" class="image"><img
-									src="images/projects/zerotrash/zerotrash.jpg" alt="" style="height:250px" /></a>
-							<h3 class="major">Zero Trash</h3>
-							<p>Software project</p>
-							<a href="projects/zerotrash.html" class="special">See more</a>
-						</article>
-						<article>
-							<a href="projects/unified-project.html" class="image"><img
-									src="images/projects/unified/unified.jpg" alt="" style="height:250px" /></a>
-							<h3 class="major">A GUI for Controlling and Supervising Multiple Robots Remotely</h3>
-							<p>Unified Project</p>
-							<a href="projects/unified-project.html" class="special">See more</a>
-						</article>
-						<article>
-							<a href="projects/pera-knowledge-hub.html" class="image"><img
-									src="images/projects/perahub/perahub.jpg" alt="" style="height:250px" /></a>
-							<h3 class="major">Pera Knowledge Hub</h3>
-							<p>Software project </p>
-							<a href="projects/pera-knowledge-hub.html" class="special">See more</a>
-						</article>
-						<article>
-							<a href="projects/trafficSignNet.html" class="image"><img
-									src="images/projects/trafficSignNet/trafficSignNet.png" alt=""
-									style="height:250px" /></a>
-							<h3 class="major">Traffic Sign Net</h3>
-							<p>Neural Network project </p>
-							<a href="projects/trafficSignNet.html" class="special">See more</a>
-						</article>
-						<article>
-							<a href="projects/real-time-vehicle-identification-system.html" class="image"><img
-									src="images/projects/real-time-vehicle-identification-system/real-time-vehicle-identification-system.png"
-									alt="" style="height:250px" /></a>
-							<h3 class="major">Real-Time Vehicle Identification System</h3>
-							<p>Database Project</p>
-							<a href="projects/real-time-vehicle-identification-system.html" class="special">See more</a>
-						</article>
-						<article>
-							<a href="projects/sap-1.html" class="image"><img src="images/projects/sap1/sap1.png"
-									alt="" /></a>
-							<h3 class="major">The Simple As Possible (SAP) - 1</h3>
-							<p>Simple As Possible Computer</p>
-							<a href="projects/sap-1.html" class="special">See more</a>
-						</article>
-					</section>
-					<h2>Mini Projects</h2>
-					<section class="features">
-						<article>
-							<h3 class="major">Supervised learning for credit approval</h3>
-							<p>Machine Learning Project</p>
-							<p style="text-transform: none;">A supervised machine learning project developed to predict
-								credit approval decisions based on applicant data. The project involved training and
-								evaluating multiple classification models, tuning model parameters, and comparing their
-								performance to achieve the highest prediction accuracy on unseen test data.<br>
-
-								* Preprocessed and cleaned the dataset for model training.<br>
-								* Trained multiple supervised learning classification models.<br>
-								* Evaluated model performance using training and test datasets.<br>
-								* Tuned model parameters to improve prediction accuracy.<br>
-								* Compared different models and selected the best-performing classifier based on
-								evaluation metrics.<br><br>
-
-								<b>Technologies</b>
-								Python, Scikit-learn, Pandas, NumPy, Jupyter Notebook
-							</p>
-						</article>
-						<article>
-							<h3 class="major">VoCe</h3>
-							<p>Network Project</p>
-							<p style="text-transform: none;">VOCE is a network application developed to demonstrate
-								packet transmission using IP multicast. The project enables efficient one-to-many
-								communication by transmitting data packets from a single sender to multiple receivers
-								simultaneously over a multicast network.<br>
-
-								* Developed a multicast-based application for packet transmission.<br>
-								* Implemented one-to-many communication using IP multicast.<br>
-								* Configured multicast groups for packet distribution.<br>
-								* Tested packet transmission and reception between multiple network nodes.<br>
-								* Evaluated the reliability of multicast communication in a local network
-								environment.<br><br>
-
-								<b>Technologies</b>
-								Java, Java Networking, IP Multicast, UDP, Socket Programming
-							</p>
-						</article>
-						<article>
-							<h3 class="major">MIPS simulator</h3>
-							<p>Software project </p>
-							<p style="text-transform: none;">A MIPS assembly language simulator developed to emulate the
-								execution of MIPS instructions in a software environment. The project demonstrates the
-								fundamentals of computer architecture by simulating the fetch, decode, and execute
-								stages of assembly-level instructions, allowing users to observe program execution and
-								register updates.<br>
-
-								* Developed a simulator to execute MIPS assembly instructions.<br>
-								* Implemented instruction fetching, decoding, and execution mechanisms.<br>
-								* Simulated register and memory operations based on MIPS architecture.<br>
-								* Displayed instruction execution results and register state changes.<br>
-								* Tested the simulator using sample MIPS assembly programs to verify
-								correctness.<br><br>
-
-								<b>Technologies</b>
-								Java, MIPS Assembly, Computer Architecture, Object-Oriented Programming
-							</p>
-						</article>
-						<article>
-							<h3 class="major">Auction Server</h3>
-							<p style="text-transform: none;"></p>
-							<p>Software Project</p>
-							<p style="text-transform: none;">A multithreaded client-server application developed to
-								simulate a real-time stock auction system using TCP/IP socket programming. The project
-								demonstrates concurrent client handling, bid processing, and synchronized auction
-								management while enabling multiple users to participate in auctions simultaneously.<br>
-
-								* Developed a multithreaded server to handle multiple client connections
-								concurrently.<br>
-								* Implemented TCP/IP socket communication between the server and clients.<br>
-								* Designed auction logic for bid submission, validation, and winner selection.<br>
-								* Applied thread synchronization techniques to ensure safe access to shared auction
-								data.<br>
-								* Tested and optimized the application for reliable concurrent operation.<br><br>
-
-								<b>Technologies</b>
-								Java, Socket Programming, Multithreading, TCP/IP, Concurrency, Object-Oriented
-								Programming (OOP), Git
-							</p>
-						</article>
-						<article>
-							<h3 class="major">Fractals</h3>
-							<p>Software Project</p>
-							<p style="text-transform: none;">A multithreaded application developed to visualize
-								mathematical fractals by performing parallel computations. The project demonstrates the
-								use of concurrency to improve rendering performance while generating complex fractal
-								patterns such as the Mandelbrot and Julia sets.<br>
-
-								* Implemented fractal generation algorithms using complex-number calculations.<br>
-								* Applied multithreading to improve rendering efficiency.<br>
-								* Developed a simple graphical interface for fractal visualization.<br>
-								* Implemented configurable rendering parameters such as iteration count and zoom
-								level.<br>
-								* Explored concurrent programming concepts, thread synchronization, and performance
-								optimization.<br><br>
-
-								<b>Technologies</b>
-								Java, Multithreading, Concurrent Programming, Object-Oriented Programming
-							</p>
-						</article>
-						<article>
-							<h3 class="major">Gate model implementation of a computer</h3>
-							<p>Hardware Simulation</p>
-							<p style="text-transform: none;">A hardware simulation project that implements the
-								gate-level architecture of a simple computer using the behavioral modeling features of
-								Verilog HDL. The project demonstrates the design, simulation, and verification of
-								fundamental digital components and their integration into a functional computing
-								system.<br>
-
-								* Developed digital hardware modules using Verilog HDL behavioral modeling.<br>
-								* Implemented fundamental logic components, including registers, arithmetic and logic
-								units (ALUs), multiplexers, and control logic.<br>
-								* Integrated individual modules to simulate the operation of a simple computer
-								architecture.<br>
-								* Performed functional simulation and verification using testbenches.<br>
-								* Validated the correctness of the design through waveform analysis and
-								debugging.<br><br>
-
-								<b>Technologies</b>
-								Verilog HDL, Digital Logic Design, Behavioral Modeling, Hardware Simulation,
-								Testbenches, Computer Architecture
-							</p>
-						</article>
-						<article>
-							<h3 class="major">Who is speaking</h3>
-							<p style="text-transform: none;">Who Is Speaking is a basic speaker identification
-								application developed using MATLAB to recognize speakers based on their voice signals.
-								The system processes recorded speech samples using fundamental digital signal processing
-								techniques and compares the extracted voice characteristics with reference data stored
-								in Microsoft Excel to identify the speaker. The project demonstrates the practical
-								application of signal analysis, and data comparison techniques
-								for basic speaker recognition and was validated using multiple recorded voice samples.
-
-								* Developed a MATLAB-based speaker identification application.<br>
-								* Processed and analyzed voice signals using basic signal processing techniques.<br>
-								* Stored and managed reference voice data using Microsoft Excel.<br>
-								* Implemented speaker comparison and identification logic.<br>
-								* Tested and validated the system using recorded voice samples.<br><br>
-
-								<b>Technologies</b>
-								MATLAB, Microsoft Excel, Digital Signal Processing (DSP)
-							</p>
-							<p></p>
-						</article>
-						<article>
-							<h3 class="major">Tic Tac Toe game</h3>
-							<p>MatLab and Arduino Based Game</p>
-							<p style="text-transform: none;">An interactive two-player Tic Tac Toe game developed using
-								MATLAB and Arduino, combining software and hardware to create a real-time gaming
-								experience. The system enables players to interact with a physical interface while
-								MATLAB processes game logic, validates moves, and determines the winner.<br>
-
-								* Developed the game logic for a two-player Tic Tac Toe application.<br>
-								* Integrated Arduino hardware with MATLAB for real-time communication and gameplay.<br>
-								* Designed a user interface for player interaction and game status visualization.<br>
-								* Implemented move validation, win detection, draw conditions, and game reset
-								functionality.<br>
-								* Tested and debugged both hardware and software components to ensure reliable
-								operation.<br><br>
-
-								<b>Technologies</b>
-								MATLAB, Arduino, Embedded Systems, Serial Communication, Hardware Integration
-							</p>
-						</article>
-						<article>
-							<h3 class="major">Flow Rate Sensor</h3>
-							<p style="text-transform: none;">A thermal-based flow meter developed to measure fluid flow
-								rate using the temperature gradient principle. The system determines the flow rate by
-								monitoring temperature changes between heated and sensing elements, providing a
-								non-mechanical and low-maintenance solution for flow measurement.<br>
-
-								* Designed and assembled a prototype thermal flow sensing circuit.<br>
-								* Integrated heating and temperature sensing elements for flow measurement.<br>
-								* Performed calibration and experimental testing under different flow conditions.<br>
-								* Analysed the relationship between temperature gradient and fluid flow rate.<br>
-								* Evaluated sensor performance, sensitivity, and measurement accuracy.<br><br>
-
-								<b>Technologies</b>
-								Temperature Sensors, Analog Electronics, Signal Conditioning, Data Acquisition, Embedded
-								Systems, Instrumentation, MATLAB, Hardware Prototyping
-							</p>
-						</article>
-					</section>
-				</div>
-			</header>
-		</section>
-		<!-- Footer -->
-		<section id="footer">
-			<hr>
-			<div class="social">
-				<button class="dropbtn">
-					<a href="https://www.linkedin.com/in/dilshanikarunarathna/" target="_blank">
-						<i class="icon brands fa fa-linkedin" style="font-size:24px"></i></a>
-				</button>
-				<button class="dropbtn">
-					<a href="https://github.com/DDilshani"><i class="icon brands fa fa-github"
-							style="font-size:24px"></i></a>
-				</button>
-				<button class="dropbtn">
-					<a href="https://www.hackerrank.com/dinelkadilshani1" target="_blank">
-						<i class="icon brands fa fa-hackerrank" style="font-size:24px">
-						</i></a>
-				</button>
-				<!--<button class="dropbtn">
-												<a href="https://twitter.com/DinelkaDilshani" target="_blank">
-													<i class="icon brands fa fa-twitter" style="font-size:24px"></i></a>-->
-				</button>
-				<button class="dropbtn">
-					<a href="https://www.facebook.com/ddilshaniKarunarathna" target="_blank">
-						<i class="icon brands fa fa-facebook-f" style="font-size:24px"></i></a>
-				</button>
-				<button class="dropbtn">
-					<a href="https://www.instagram.com/dinelka_dilshani/?hl=en" target="_blank">
-						<i class="icon brands fa fa-instagram" style="font-size:24px"></i></a>
-				</button>
-			</div>
-
-			<div class="inner">
-				<ul class="copyright">
-					<li>&copy; Copyright © 2022 Dilshani Karunarathna
-					</li>
-					<li>Powered by GitHub</li>
-				</ul>
-			</div>
-		</section>
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+        <div class="subsection-heading reveal">
+          <p class="eyebrow">More explorations</p>
+          <h2>Mini projects</h2>
+          <p>Smaller projects across machine learning, networking, computer architecture, graphics and embedded systems.</p>
+        </div>
+        <div class="mini-grid">
+          <article class="mini-card reveal"><span>01</span><div><h3>Supervised Learning for Credit Approval</h3><p>Machine learning</p></div></article>          <article class="mini-card reveal"><span>02</span><div><h3>VoCe</h3><p>Computer networking</p></div></article>          <article class="mini-card reveal"><span>03</span><div><h3>MIPS Simulator</h3><p>Computer architecture</p></div></article>          <article class="mini-card reveal"><span>04</span><div><h3>Auction Server</h3><p>Distributed / networked software</p></div></article>          <article class="mini-card reveal"><span>05</span><div><h3>Fractals</h3><p>Graphics &amp; computation</p></div></article>          <article class="mini-card reveal"><span>06</span><div><h3>Gate-model Computer</h3><p>Hardware simulation</p></div></article>          <article class="mini-card reveal"><span>07</span><div><h3>Who Is Speaking?</h3><p>Audio / signal processing</p></div></article>          <article class="mini-card reveal"><span>08</span><div><h3>Tic-Tac-Toe</h3><p>MATLAB &amp; Arduino</p></div></article>          <article class="mini-card reveal"><span>09</span><div><h3>Flow Rate Sensor</h3><p>Embedded systems</p></div></article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Dilshani Karunarathna</p>
+      <div class="footer-links">
+        <a href="https://github.com/DDilshani" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/dilshanikarunarathna/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:dilshaniddk@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/portfolio.js"></script>
 </body>
-
 </html>
