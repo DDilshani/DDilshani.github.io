@@ -38,29 +38,16 @@
             margin-bottom: 0;
         }
 
-        /* Education: portrait beside the education details */
-        .education-row {
-            display: grid;
-            grid-template-columns: minmax(150px, 210px) 1fr;
-            gap: 22px;
-            align-items: stretch;
-            margin: 34px 0 6px;
-        }
-
-        .education-photo {
-            width: 100%;
-            height: 100%;
-            min-height: 250px;
+        /* About portrait: positioned below the About title in the left column */
+        .about-education-photo {
+            display: block;
+            width: min(100%, 320px);
+            aspect-ratio: 4 / 5;
+            margin-top: 36px;
             object-fit: cover;
             object-position: center;
             border: 1px solid var(--line);
             border-radius: 18px;
-            display: block;
-        }
-
-        .education-row .education-block {
-            margin: 0;
-            height: 100%;
         }
 
         /* Keep the Selected Work cards aligned as one consistent row */
@@ -88,14 +75,9 @@
         }
 
         @media (max-width: 640px) {
-            .education-row {
-                grid-template-columns: 1fr;
-            }
-
-            .education-photo {
-                max-height: 420px;
-                min-height: 0;
-                aspect-ratio: 4 / 5;
+            .about-education-photo {
+                width: min(100%, 300px);
+                margin-top: 28px;
             }
         }
     </style>
@@ -169,6 +151,7 @@
                 <div class="section-heading reveal">
                     <p class="eyebrow">About</p>
                     <h2>Designing and building software across the stack.</h2>
+                    <img class="about-education-photo" alt="Dilshani Karunarathna" src="images/dilshani-2.jpeg" />
                 </div>
                 <div class="about-copy reveal">
                     <p>My work spans enterprise product engineering, cloud delivery, DevOps automation and applied
@@ -181,17 +164,14 @@
                         value maintainable code, thoughtful automation, strong testing practices and close collaboration
                         with product, design and QA teams.</p>
 
-                    <div class="education-row">
-                        <img class="education-photo" alt="Dilshani Karunarathna" src="images/dilshani-2.jpeg" />
-                        <div class="education-block">
-                            <p class="eyebrow">Education</p>
-                            <h3>BSc Eng. (Hons) in Computer Engineering - First Class</h3>
-                            <p><strong>University of Peradeniya, Sri Lanka</strong></p>
-                            <p>My engineering education built the foundation for my work across software systems, research
-                                and product development. During my undergraduate studies, I worked on projects and research
-                                spanning mixed reality, robotics, artificial intelligence and medical imaging, combining
-                                software development with experimentation, data analysis and problem solving.</p>
-                        </div>
+                    <div class="education-block">
+                        <p class="eyebrow">Education</p>
+                        <h3>BSc Eng. (Hons) in Computer Engineering - First Class</h3>
+                        <p><strong>University of Peradeniya, Sri Lanka</strong></p>
+                        <p>My engineering education built the foundation for my work across software systems, research
+                            and product development. During my undergraduate studies, I worked on projects and research
+                            spanning mixed reality, robotics, artificial intelligence and medical imaging, combining
+                            software development with experimentation, data analysis and problem solving.</p>
                     </div>
 
                     <div aria-label="Areas of interest" class="about-tags">

@@ -11,6 +11,58 @@
     <meta content="#0b1020" name="theme-color" />
     <link href="assets/css/fontawesome-all.min.css" rel="stylesheet" />
     <link href="assets/css/portfolio.css" rel="stylesheet" />
+
+    <style>
+        .mini-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .mini-card {
+            align-items: start;
+            min-height: 100%;
+            padding: 26px;
+        }
+
+        .mini-card > div {
+            min-width: 0;
+        }
+
+        .mini-card .case-kicker {
+            margin: 0 0 8px;
+        }
+
+        .mini-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .mini-description {
+            margin: 0 0 14px;
+            line-height: 1.7;
+        }
+
+        .mini-points {
+            margin: 0 0 18px;
+            padding-left: 19px;
+        }
+
+        .mini-points li {
+            margin-bottom: 7px;
+            line-height: 1.55;
+        }
+
+        .mini-card .tech-row {
+            margin-top: 14px;
+        }
+
+        @media (max-width: 900px) {
+            .mini-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -155,65 +207,220 @@
                 <div class="subsection-heading reveal">
                     <p class="eyebrow">More explorations</p>
                     <h2>Mini projects</h2>
-                    <p>Smaller projects across machine learning, networking, computer architecture, graphics and
-                        embedded systems.</p>
+                    <p>Smaller projects where I explored machine learning, networking, computer architecture,
+                        concurrent programming, signal processing, hardware simulation and embedded systems.</p>
                 </div>
+
                 <div class="mini-grid">
-                    <article class="mini-card reveal"><span>01</span>
+                    <article class="mini-card reveal">
+                        <span>01</span>
                         <div>
+                            <p class="case-kicker">Machine learning · Classification</p>
                             <h3>Supervised Learning for Credit Approval</h3>
-                            <p>Machine learning</p>
+                            <p class="mini-description">
+                                A supervised machine-learning project developed to predict credit approval decisions
+                                from applicant data. I trained and compared multiple classification models, tuned model
+                                parameters and evaluated their ability to generalise to unseen test data.
+                            </p>
+                            <ul class="mini-points">
+                                <li>Cleaned and preprocessed applicant data for model training.</li>
+                                <li>Trained and evaluated multiple supervised classification models.</li>
+                                <li>Tuned model parameters to improve predictive performance.</li>
+                                <li>Compared evaluation results and selected the best-performing classifier.</li>
+                            </ul>
+                            <div class="tech-row">
+                                <span>Python</span><span>Scikit-learn</span><span>Pandas</span>
+                                <span>NumPy</span><span>Jupyter Notebook</span>
+                            </div>
                         </div>
                     </article>
-                    <article class="mini-card reveal"><span>02</span>
+
+                    <article class="mini-card reveal">
+                        <span>02</span>
                         <div>
+                            <p class="case-kicker">Networking · IP multicast</p>
                             <h3>VoCe</h3>
-                            <p>Computer networking</p>
+                            <p class="mini-description">
+                                A network application created to demonstrate packet transmission using IP multicast.
+                                The system supports efficient one-to-many communication by sending data from one source
+                                to multiple receivers through a multicast group.
+                            </p>
+                            <ul class="mini-points">
+                                <li>Developed multicast-based packet transmission between network nodes.</li>
+                                <li>Implemented one-to-many communication using IP multicast and UDP.</li>
+                                <li>Configured multicast groups for packet distribution.</li>
+                                <li>Tested packet transmission and reception across multiple receivers.</li>
+                            </ul>
+                            <div class="tech-row">
+                                <span>Java</span><span>Java Networking</span><span>IP Multicast</span>
+                                <span>UDP</span><span>Socket Programming</span>
+                            </div>
                         </div>
                     </article>
-                    <article class="mini-card reveal"><span>03</span>
+
+                    <article class="mini-card reveal">
+                        <span>03</span>
                         <div>
+                            <p class="case-kicker">Computer architecture · Simulation</p>
                             <h3>MIPS Simulator</h3>
-                            <p>Computer architecture</p>
+                            <p class="mini-description">
+                                A software simulator for executing MIPS assembly instructions and exploring the
+                                fundamentals of processor operation. The simulator reproduces instruction fetch,
+                                decode and execution while exposing register and memory state changes.
+                            </p>
+                            <ul class="mini-points">
+                                <li>Implemented MIPS instruction fetching, decoding and execution.</li>
+                                <li>Simulated register and memory operations based on the MIPS architecture.</li>
+                                <li>Displayed execution results and register-state changes.</li>
+                                <li>Validated the simulator with sample MIPS assembly programs.</li>
+                            </ul>
+                            <div class="tech-row">
+                                <span>Java</span><span>MIPS Assembly</span><span>Computer Architecture</span>
+                                <span>Object-Oriented Programming</span>
+                            </div>
                         </div>
                     </article>
-                    <article class="mini-card reveal"><span>04</span>
+
+                    <article class="mini-card reveal">
+                        <span>04</span>
                         <div>
+                            <p class="case-kicker">Networking · Concurrency</p>
                             <h3>Auction Server</h3>
-                            <p>Distributed / networked software</p>
+                            <p class="mini-description">
+                                A multithreaded client-server application that simulates a real-time stock auction.
+                                Multiple clients can connect simultaneously, submit bids and participate in auctions
+                                while the server manages shared auction state safely.
+                            </p>
+                            <ul class="mini-points">
+                                <li>Built a multithreaded server for concurrent client connections.</li>
+                                <li>Implemented TCP/IP socket communication between clients and the server.</li>
+                                <li>Developed bid validation, auction management and winner-selection logic.</li>
+                                <li>Used thread synchronisation to protect shared auction data.</li>
+                            </ul>
+                            <div class="tech-row">
+                                <span>Java</span><span>TCP/IP</span><span>Socket Programming</span>
+                                <span>Multithreading</span><span>Concurrency</span><span>Git</span>
+                            </div>
                         </div>
                     </article>
-                    <article class="mini-card reveal"><span>05</span>
+
+                    <article class="mini-card reveal">
+                        <span>05</span>
                         <div>
+                            <p class="case-kicker">Concurrent programming · Visualisation</p>
                             <h3>Fractals</h3>
-                            <p>Graphics &amp; computation</p>
+                            <p class="mini-description">
+                                A multithreaded application for visualising mathematical fractals using parallel
+                                computation. The project explored how concurrency can improve the rendering of
+                                computationally intensive Mandelbrot and Julia set calculations.
+                            </p>
+                            <ul class="mini-points">
+                                <li>Implemented Mandelbrot and Julia fractal generation algorithms.</li>
+                                <li>Applied multithreading to improve rendering performance.</li>
+                                <li>Built a graphical interface for interactive fractal visualisation.</li>
+                                <li>Added configurable iteration and zoom parameters.</li>
+                            </ul>
+                            <div class="tech-row">
+                                <span>Java</span><span>Multithreading</span><span>Concurrent Programming</span>
+                                <span>Object-Oriented Programming</span>
+                            </div>
                         </div>
                     </article>
-                    <article class="mini-card reveal"><span>06</span>
+
+                    <article class="mini-card reveal">
+                        <span>06</span>
                         <div>
-                            <h3>Gate-model Computer</h3>
-                            <p>Hardware simulation</p>
+                            <p class="case-kicker">Digital design · Hardware simulation</p>
+                            <h3>Gate Model Implementation of a Computer</h3>
+                            <p class="mini-description">
+                                A gate-level hardware simulation of a simple computer created using Verilog HDL.
+                                Individual digital components were modelled, verified and integrated to demonstrate
+                                how fundamental hardware modules work together as a computing system.
+                            </p>
+                            <ul class="mini-points">
+                                <li>Developed digital hardware modules using Verilog behavioural modelling.</li>
+                                <li>Implemented registers, ALUs, multiplexers and control logic.</li>
+                                <li>Integrated modules into a simple computer architecture.</li>
+                                <li>Verified behaviour using testbenches and waveform analysis.</li>
+                            </ul>
+                            <div class="tech-row">
+                                <span>Verilog HDL</span><span>Digital Logic</span><span>Behavioral Modeling</span>
+                                <span>Testbenches</span><span>Computer Architecture</span>
+                            </div>
                         </div>
                     </article>
-                    <article class="mini-card reveal"><span>07</span>
+
+                    <article class="mini-card reveal">
+                        <span>07</span>
                         <div>
+                            <p class="case-kicker">Signal processing · Speaker identification</p>
                             <h3>Who Is Speaking?</h3>
-                            <p>Audio / signal processing</p>
+                            <p class="mini-description">
+                                A basic speaker-identification application developed in MATLAB. Recorded speech samples
+                                are processed using fundamental signal-processing techniques and compared with stored
+                                reference voice characteristics to identify the speaker.
+                            </p>
+                            <ul class="mini-points">
+                                <li>Developed a MATLAB-based speaker identification workflow.</li>
+                                <li>Processed and analysed recorded voice signals.</li>
+                                <li>Stored and managed reference voice information using Microsoft Excel.</li>
+                                <li>Implemented speaker comparison logic and validated it with recorded samples.</li>
+                            </ul>
+                            <div class="tech-row">
+                                <span>MATLAB</span><span>Digital Signal Processing</span><span>Microsoft Excel</span>
+                                <span>Signal Analysis</span>
+                            </div>
                         </div>
                     </article>
-                    <article class="mini-card reveal"><span>08</span>
+
+                    <article class="mini-card reveal">
+                        <span>08</span>
                         <div>
-                            <h3>Tic-Tac-Toe</h3>
-                            <p>MATLAB &amp; Arduino</p>
+                            <p class="case-kicker">MATLAB · Arduino · Hardware integration</p>
+                            <h3>Tic Tac Toe Game</h3>
+                            <p class="mini-description">
+                                An interactive two-player Tic Tac Toe game combining MATLAB with Arduino hardware.
+                                MATLAB handles the game logic and state while the physical interface enables real-time
+                                player interaction through serial communication.
+                            </p>
+                            <ul class="mini-points">
+                                <li>Implemented two-player game logic, move validation and win detection.</li>
+                                <li>Integrated Arduino hardware with MATLAB for real-time interaction.</li>
+                                <li>Created a user interface for gameplay and game-state visualisation.</li>
+                                <li>Tested and debugged the combined software and hardware workflow.</li>
+                            </ul>
+                            <div class="tech-row">
+                                <span>MATLAB</span><span>Arduino</span><span>Embedded Systems</span>
+                                <span>Serial Communication</span><span>Hardware Integration</span>
+                            </div>
                         </div>
                     </article>
-                    <article class="mini-card reveal"><span>09</span>
+
+                    <article class="mini-card reveal">
+                        <span>09</span>
                         <div>
+                            <p class="case-kicker">Instrumentation · Sensor prototyping</p>
                             <h3>Flow Rate Sensor</h3>
-                            <p>Embedded systems</p>
+                            <p class="mini-description">
+                                A thermal flow-meter prototype designed to estimate fluid flow using temperature
+                                gradients between heated and sensing elements. The project explored a non-mechanical
+                                approach to flow measurement through circuit design, calibration and experimental testing.
+                            </p>
+                            <ul class="mini-points">
+                                <li>Designed and assembled a prototype thermal flow-sensing circuit.</li>
+                                <li>Integrated heating and temperature-sensing elements.</li>
+                                <li>Calibrated and tested the system under different flow conditions.</li>
+                                <li>Analysed temperature-gradient behaviour, sensitivity and measurement accuracy.</li>
+                            </ul>
+                            <div class="tech-row">
+                                <span>Temperature Sensors</span><span>Analog Electronics</span>
+                                <span>Signal Conditioning</span><span>Data Acquisition</span>
+                                <span>MATLAB</span><span>Hardware Prototyping</span>
+                            </div>
                         </div>
                     </article>
                 </div>
+
             </div>
         </section>
     </main>
